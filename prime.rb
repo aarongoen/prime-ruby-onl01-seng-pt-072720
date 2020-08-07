@@ -18,5 +18,7 @@
 # end 
 
 def prime?(number)
-  (2..number-1).none? {|divisor| number % divisor == 0}
+  if number <= number-1
+    return false
+    else (2..number-1).none? {|divisor| number % divisor == 0}
 end
