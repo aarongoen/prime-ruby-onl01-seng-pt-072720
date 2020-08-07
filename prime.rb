@@ -17,7 +17,7 @@
 #   end
 # end 
 
-
+def prime?(number)
 is_prime = true
 number = item - 1
 while number > 1
