@@ -22,4 +22,5 @@ def prime?(number)
     return "Be sure to account for negative numbers!"
   else 
     (2..number-1).none? {|divisor| number % divisor == 0}
-end
+  end
+end 
