@@ -18,13 +18,5 @@
 # end 
 
 def prime?(number)
-is_prime = true
-number = item - 1
-while number > 1
-  if item % number != 0
-    number = number - 1
-  else
-    is_prime = false
-    break
-  end
+  (2..number-1).none? {|divisor| number % divisor == 0}
 end
